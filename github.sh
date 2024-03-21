@@ -38,4 +38,6 @@ cat ./ball.sh.tmp | sed 's/ https/}https/g' | tr '}' '\n' | grep '{' | tr '{' ' 
 
 chmod +x ./*.sh
 
+rm -rf ./*.tmp && rm -rf *.xml
+
 sh ./ball.sh
